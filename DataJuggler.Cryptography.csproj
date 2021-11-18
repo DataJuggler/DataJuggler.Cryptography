@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
     <Version>6.0.0</Version>
-    <PackageId>DataJuggler.Net5.Cryptography</PackageId>
+    <PackageId>DataJuggler.Cryptography</PackageId>
     <Authors>DataJuggler</Authors>
     <Description>This is a port of the Dot Net Core version of CryptographyHelper from my Dot Net 
 Framework project DataJuggler.Core.UltimateHelper.
@@ -22,8 +22,8 @@ https://github.com/DataJuggler/DataJuggler.Net5.Cryptography/blob/master/README.
     <RepositoryUrl>https://github.com/DataJuggler/DataJuggler.Net5.Cryptography.git</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>C# csharp Cryptography</PackageTags>
-    <Copyright>DataJuggler 2020 - Use As Is - Do What You Want</Copyright>
-    <PackageProjectUrl>https://github.com/DataJuggler/DataJuggler.Net5.Cryptography</PackageProjectUrl>
+    <Copyright>DataJuggler 2021 - Use As Is - Do What You Want</Copyright>
+    <PackageProjectUrl>https://github.com/DataJuggler/DataJuggler.Cryptography</PackageProjectUrl>
     <PackageReleaseNotes>
 
 11.17.2021
@@ -50,7 +50,15 @@ Version 1.0.7 - I added try catches to all the methods.
 The first release had the wrong namespace.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
-    <PlatformTarget>x64</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>    
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0|AnyCPU'">
+    <WarningLevel>5</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0|AnyCPU'">
+    <WarningLevel>5</WarningLevel>
   </PropertyGroup>
 
   <ItemGroup>

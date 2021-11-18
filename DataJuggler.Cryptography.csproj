@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
-    <Version>6.0.1</Version>
+    <Version>6.0.2</Version>
     <PackageId>DataJuggler.Cryptography</PackageId>
     <Authors>DataJuggler</Authors>
     <Description>This is a port of the Dot Net Core version of CryptographyHelper from my Dot Net 
@@ -25,6 +25,9 @@ https://github.com/DataJuggler/DataJuggler.Cryptography/blob/master/README.md</D
     <Copyright>DataJuggler 2021 - Use As Is - Do What You Want</Copyright>
     <PackageProjectUrl>https://github.com/DataJuggler/DataJuggler.Cryptography</PackageProjectUrl>
     <PackageReleaseNotes>
+11.17.2021 (Take Three)
+x64 is kind of useless if you can only use it in x64 projects, so I had to switch back to any cpu.
+	
 11.17.2021 (Take Two)
 Verion 6.0.1: Changing the package name doesn't change the namespace, so I had to do a global search and replace.
 The namespace is now correct at DataJuggler.Cryptography.
@@ -53,7 +56,7 @@ Version 1.0.7 - I added try catches to all the methods.
 The first release had the wrong namespace.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
-    <PlatformTarget>x64</PlatformTarget>    
+    <PlatformTarget>AnyCPU</PlatformTarget>    
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0|AnyCPU'">

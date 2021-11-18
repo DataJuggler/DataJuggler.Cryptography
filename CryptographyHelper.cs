@@ -8,11 +8,11 @@ using System.Security.Cryptography;
 using Konscious.Security.Cryptography;
 using System.Linq;
 using DataJuggler.UltimateHelper;
-using DataJuggler.Net5.Cryptography.Objects;
+using DataJuggler.Cryptography.Objects;
 
 #endregion
 
-namespace DataJuggler.Net5.Cryptography
+namespace DataJuggler.Cryptography
 {
 
     #region class CryptographyHelper

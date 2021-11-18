@@ -1,8 +1,8 @@
-# Nuget Package Name: DataJuggler.Net5.Cryptography
+# Nuget Package Name: DataJuggler.Cryptography
 
-Available for Dot Net Core 3.1.
+Available for .Net5.0 and .Net6.0.
 
-# DataJuggler.Net5.Cryptography
+# DataJuggler.Cryptography
 This is a port of CryptographyHelper from DataJuggler.Core.UltimateHelper for dot net framework. This class uses System.Security.AesManaged for encrypt / decryption and Konscious.Security.Cryptography.Argon2 by Keef Aragon for password hashing.  
 
 This is a copy of CryptographyHelper class from DataJuggler.Core.UltimateHelper for
@@ -12,7 +12,7 @@ of UltimateHelper called DataJuggler.UltimateHelper.Core, but Nuget needs to add
 
 To use this package: 
 
-Install Package: DataJuggler.Net5.Cryptography
+Install Package: DataJuggler.Cryptography
 
 There are two main functions for the project:
 1. Encryption / Decryption, with or without an encryption key using System.Security.Cryptography.AesManaged
@@ -20,7 +20,7 @@ There are two main functions for the project:
 
 To use in your own projects after you install the package via Nuget
 
-using DataJuggler.Net5.Cryptography;
+using DataJuggler.Cryptography;
 
 There is a constant available called DefaultPassword. The Encryption / Decryption methods and the GeneratePasswordHash
 methods contain overrides that allow you to supply your own keyCode or you may use the DefaultPassword:

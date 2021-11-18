@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 #endregion
 
-namespace DataJuggler.Net5.Cryptography.Objects
+namespace DataJuggler.Cryptography.Objects
 {
 
     #region class PasswordHashInfo

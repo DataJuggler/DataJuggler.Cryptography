@@ -2,30 +2,33 @@
 
   <PropertyGroup>
     <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
-    <Version>6.0.0</Version>
+    <Version>6.0.1</Version>
     <PackageId>DataJuggler.Cryptography</PackageId>
     <Authors>DataJuggler</Authors>
     <Description>This is a port of the Dot Net Core version of CryptographyHelper from my Dot Net 
 Framework project DataJuggler.Core.UltimateHelper.
 
-The code is available here: https://github.com/DataJuggler/DataJuggler.Net5.Cryptography
+The code is available here: https://github.com/DataJuggler/DataJuggler.Cryptography
 
 This project adds many Nuget dependencies to use Konscious.Security.Cryptography in a Dot Net
 Core project, so I choose to create a separate project rather than include it in the Dot Net Core version of UltimateHelper, DataJuggler.Net.UltimateHelper.Core.
 
 
 To view the documentation, visit:
-https://github.com/DataJuggler/DataJuggler.Net5.Cryptography/blob/master/README.md</Description>
+https://github.com/DataJuggler/DataJuggler.Cryptography/blob/master/README.md</Description>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
     <PackageIcon>Lock32.png</PackageIcon>
     <PackageIconUrl />
-    <RepositoryUrl>https://github.com/DataJuggler/DataJuggler.Net5.Cryptography.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/DataJuggler/DataJuggler.Cryptography.git</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>C# csharp Cryptography</PackageTags>
     <Copyright>DataJuggler 2021 - Use As Is - Do What You Want</Copyright>
     <PackageProjectUrl>https://github.com/DataJuggler/DataJuggler.Cryptography</PackageProjectUrl>
     <PackageReleaseNotes>
-
+11.17.2021 (Take Two)
+Verion 6.0.1: Changing the package name doesn't change the namespace, so I had to do a global search and replace.
+The namespace is now correct at DataJuggler.Cryptography.
+	
 11.17.2021
 Version 6.0.0: I updated to version 6.0.0, and I dropped the name. I am going to try and multi-target
 .Net 5 and 6 with this version. We will see the results soon.

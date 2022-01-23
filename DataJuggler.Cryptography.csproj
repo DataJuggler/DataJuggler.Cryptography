@@ -1,8 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
-    <Version>6.0.2</Version>
+    <TargetFramework>net6.0</TargetFramework>
+    <Version>6.0.3</Version>
     <PackageId>DataJuggler.Cryptography</PackageId>
     <Authors>DataJuggler</Authors>
     <Description>This is a port of the Dot Net Core version of CryptographyHelper from my Dot Net 
@@ -22,9 +22,11 @@ https://github.com/DataJuggler/DataJuggler.Cryptography/blob/master/README.md</D
     <RepositoryUrl>https://github.com/DataJuggler/DataJuggler.Cryptography.git</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>C# csharp Cryptography</PackageTags>
-    <Copyright>DataJuggler 2021 - Use As Is - Do What You Want</Copyright>
+    <Copyright>DataJuggler 2022 - Use As Is - Do What You Want</Copyright>
     <PackageProjectUrl>https://github.com/DataJuggler/DataJuggler.Cryptography</PackageProjectUrl>
     <PackageReleaseNotes>
+1.23.2022: DataJuggler.UltimateHelper was updated, so I updated this project.
+		
 11.17.2021 (Take Three)
 x64 is kind of useless if you can only use it in x64 projects, so I had to switch back to any cpu.
 	
@@ -86,12 +88,18 @@ The first release had the wrong namespace.</PackageReleaseNotes>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DataJuggler.UltimateHelper" Version="1.7.1" />
-    <PackageReference Include="Konscious.Security.Cryptography.Argon2" Version="1.2.1" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="License\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="DataJuggler.UltimateHelper" Version="6.0.2" />
+    <PackageReference Include="Konscious.Security.Cryptography.Argon2" Version="1.2.1" />
+  </ItemGroup>
+
 </Project>
+
+
+
+
+
+

@@ -80,7 +80,7 @@ namespace DataJuggler.Cryptography
 
                             using (Aes aes = Aes.Create())
                             {
-                                using (var pbkdf2 = new Rfc2898DeriveBytes(password, _pepper, 32767))
+                                using (var pbkdf2 = new Rfc2898DeriveBytes(password, _pepper, 32767, HashAlgorithmName.SHA512))
                                 {
                                     var key = pbkdf2.GetBytes(32);
 
@@ -146,7 +146,7 @@ namespace DataJuggler.Cryptography
                         // Remember to dispose of types that implement IDisposable - this old code had lots of memory leaks.
                         using (Aes aes = Aes.Create())
                         {
-                            using (var pbkdf2 = new Rfc2898DeriveBytes(password, _pepper, 32767)) // MD5 is insecure as KDF, we use PBKDF2 instead.
+                            using (var pbkdf2 = new Rfc2898DeriveBytes(password, _pepper, 32767, HashAlgorithmName.SHA512)) // MD5 is insecure as KDF, we use PBKDF2 instead.
                             {
                                 using (var rng = RandomNumberGenerator.Create())
                                 {
@@ -493,14 +493,17 @@ namespace DataJuggler.Cryptography
                 // initial value
                 bool verified = false;
 
-                // if all the parameters exist
-                if (TextHelper.Exists(password) && (salt.Length > 0) && (storedHash.Length > 0))
+                if (NullHelper.Exists(salt, storedHash))
                 {
-                    // generate the loginHash again
-                    var newHash = HashPassword(password,  salt);
+                    // if all the parameters exist
+                    if (TextHelper.Exists(password) && (salt.Length > 0) && (storedHash.Length > 0))
+                    {
+                        // generate the loginHash again
+                        var newHash = HashPassword(password,  salt);
 
-                    // set the return value
-                    verified = storedHash.SequenceEqual(newHash);
+                        // set the return value
+                        verified = storedHash.SequenceEqual(newHash);
+                    }
                 }
 
                 // return value

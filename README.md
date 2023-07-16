@@ -1,6 +1,11 @@
 # Nuget Package Name: DataJuggler.Cryptography
 
-Available for .Net5.0 and .Net6.0.
+This version is for .NET 7. Use a 6.x version for .NET 6, a 5.x for .NET 5.
+
+Update: 7.16.2023
+I opened this project for the first time in a long time, and discovered the constructor for 
+Rfc2898DeriveBytes was deemed obsolete. I changed the HashAlgorithm name to 
+HashAlgorithmName.SHA512. This probably breaks any existing users, and for that I apologize.
 
 # DataJuggler.Cryptography
 This is a port of CryptographyHelper from DataJuggler.Core.UltimateHelper for dot net framework. This class uses System.Security.AesManaged for encrypt / decryption and Konscious.Security.Cryptography.Argon2 by Keef Aragon for password hashing.  

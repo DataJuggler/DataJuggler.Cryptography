@@ -23,28 +23,32 @@ https://github.com/DataJuggler/DataJuggler.Cryptography/blob/master/README.md</D
     <PackageTags>C# csharp Cryptography</PackageTags>
     <Copyright>DataJuggler 2023 - Use As Is - Do What You Want</Copyright>
     <PackageProjectUrl>https://github.com/DataJuggler/DataJuggler.Cryptography</PackageProjectUrl>
-    <PackageReleaseNotes>11.8.2022
-v7.00: .NET 7 is out of preview, so this version is out of preview.
+    <PackageReleaseNotes>
+		7.16.2023: The constructor for Rfc2898DeriveBytes was obsolete, so I had to add a parameter for
+		HaslAlgorithmName.SHA512. Apologies if this breaks anything.
 
-10.19.2022: v7.0.0-rc1 is the same code base as v6.0.5. The only difference
-is the TargetFramework is now .NET 7.
+		11.8.2022
+		v7.00: .NET 7 is out of preview, so this version is out of preview.
 
-6.17.2022 v6.0.5: Updated DataJuggler.UltimateHelper.
+		10.19.2022: v7.0.0-rc1 is the same code base as v6.0.5. The only difference
+		is the TargetFramework is now .NET 7.
 
-6.8.2022 v6.0.4: Updated DataJuggler.UltimateHelper and Argon Nuget package.
+		6.17.2022 v6.0.5: Updated DataJuggler.UltimateHelper.
 
-1.23.2022: DataJuggler.UltimateHelper was updated, so I updated this project.
+		6.8.2022 v6.0.4: Updated DataJuggler.UltimateHelper and Argon Nuget package.
 
-11.17.2021 (Take Three)
-x64 is kind of useless if you can only use it in x64 projects, so I had to switch back to any cpu.
+		1.23.2022: DataJuggler.UltimateHelper was updated, so I updated this project.
 
-11.17.2021 (Take Two)
-Verion 6.0.1: Changing the package name doesn't change the namespace, so I had to do a global search and replace.
-The namespace is now correct at DataJuggler.Cryptography.
+		11.17.2021 (Take Three)
+		x64 is kind of useless if you can only use it in x64 projects, so I had to switch back to any cpu.
 
-11.17.2021
-Version 6.0.0: I updated to version 6.0.0, and I dropped the name. I am going to try and multi-target
-.Net 5 and 6 with this version. We will see the results soon.
+		11.17.2021 (Take Two)
+		Verion 6.0.1: Changing the package name doesn't change the namespace, so I had to do a global search and replace.
+		The namespace is now correct at DataJuggler.Cryptography.
+
+		11.17.2021
+		Version 6.0.0: I updated to version 6.0.0, and I dropped the name. I am going to try and multi-target
+		.Net 5 and 6 with this version. We will see the results soon.
 
 		Version 1.5.0 - I ported this to .Net 5. Not sure if there are any advantages for doing that or not.
 

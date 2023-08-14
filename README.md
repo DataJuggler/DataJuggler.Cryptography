@@ -2,6 +2,8 @@
 
 This version is for .NET 7. Use a 6.x version for .NET 6, a 5.x for .NET 5.
 
+Update 8.13.2023: DataJuggler.UltimateHelper was updated.
+
 Update: 7.16.2023
 I opened this project for the first time in a long time, and discovered the constructor for 
 Rfc2898DeriveBytes was deemed obsolete. I changed the HashAlgorithm name to 

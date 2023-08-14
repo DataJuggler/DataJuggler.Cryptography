@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <Version>7.1.0</Version>
+    <Version>7.1.1</Version>
     <PackageId>DataJuggler.Cryptography</PackageId>
     <Authors>DataJuggler</Authors>
     <Description>This version is for .NET7 and is a port of the Dot Net Core version of CryptographyHelper from my Dot Net 
@@ -24,6 +24,8 @@ https://github.com/DataJuggler/DataJuggler.Cryptography/blob/master/README.md</D
     <Copyright>DataJuggler 2023 - Use As Is - Do What You Want</Copyright>
     <PackageProjectUrl>https://github.com/DataJuggler/DataJuggler.Cryptography</PackageProjectUrl>
     <PackageReleaseNotes>
+		8.13.2023: DataJuggler.UltimateHelper was updated.
+		
 		7.16.2023: The constructor for Rfc2898DeriveBytes was obsolete, so I had to add a parameter for
 		HaslAlgorithmName.SHA512. Apologies if this breaks anything.
 
@@ -107,7 +109,7 @@ https://github.com/DataJuggler/DataJuggler.Cryptography/blob/master/README.md</D
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DataJuggler.UltimateHelper" Version="7.1.3" />
+    <PackageReference Include="DataJuggler.UltimateHelper" Version="7.2.1" />
     <PackageReference Include="Konscious.Security.Cryptography.Argon2" Version="1.3.0" />
   </ItemGroup>
 

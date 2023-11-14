@@ -1,6 +1,8 @@
 # Nuget Package Name: DataJuggler.Cryptography
 
-This version is for .NET 7. Use a 6.x version for .NET 6, a 5.x for .NET 5.
+This version is for .NET 8. Use a 7.x version for .NET 7, a 6.x for .NET 6.
+
+Update 11.14.2023: DataJuggler.Cryptography has been updated to .NET 8.
 
 Update 8.13.2023: DataJuggler.UltimateHelper was updated.
 

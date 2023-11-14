@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Version>7.1.1</Version>
+    <Version>8.0.0</Version>
     <PackageId>DataJuggler.Cryptography</PackageId>
     <Authors>DataJuggler</Authors>
     <Description>This version is for .NET8 and is a port of the Dot Net Core version of CryptographyHelper from my Dot Net 

@@ -2,6 +2,9 @@
 
 This version is for .NET 8. Use a 7.x version for .NET 7, a 6.x for .NET 6.
 
+# News
+Update 11.20.2023: DataJuggler.UltimateHelper was updated.
+
 Update 11.14.2023: DataJuggler.Cryptography has been updated to .NET 8.
 
 Update 8.13.2023: DataJuggler.UltimateHelper was updated.

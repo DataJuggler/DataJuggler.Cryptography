@@ -5,7 +5,7 @@
     <Version>9.0.0</Version>
     <PackageId>DataJuggler.Cryptography</PackageId>
     <Authors>DataJuggler</Authors>
-    <Description>This version is for .NET8 and is a port of the Dot Net Core version of CryptographyHelper from my Dot Net 
+    <Description>This version is for .NET9 and is a port of the Dot Net Core version of CryptographyHelper from my Dot Net 
 Framework project DataJuggler.Core.UltimateHelper.
 
 The code is available here: https://github.com/DataJuggler/DataJuggler.Cryptography
@@ -24,6 +24,8 @@ https://github.com/DataJuggler/DataJuggler.Cryptography/blob/master/README.md</D
     <Copyright>DataJuggler 2023 - Use As Is - Do What You Want</Copyright>
     <PackageProjectUrl>https://github.com/DataJuggler/DataJuggler.Cryptography</PackageProjectUrl>
     <PackageReleaseNotes>
+		11.19.2024: This project was updated to .NET 9.
+		
 		11.20.2023: DataJuggler.UltimateHelper was updated.
 
 		11.14.2023: DataJuggler.Cryptography has been updated to .NET 8.

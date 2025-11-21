@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
-    <Version>9.0.1</Version>
+    <Version>9.10.0</Version>
     <PackageId>DataJuggler.Cryptography</PackageId>
     <Authors>DataJuggler</Authors>
     <Description>This version is for .NET9 and is a port of the Dot Net Core version of CryptographyHelper from my Dot Net 

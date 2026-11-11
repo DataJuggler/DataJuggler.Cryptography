@@ -1,8 +1,10 @@
 # Nuget Package Name: DataJuggler.Cryptography
 
-This version is for .NET 9. Use a 8.x version for .NET 8, a 7.x for .NET 7.
+This version is for .NET 11. Use a 10.x version for .NET 10, a 8.x for .NET 8, etc.
 
 # News
+
+Update 11.11.2026: DataJuggler.Cryptography has been updated to .NET 11.
 
 Update 11.21.2025: DataJuggler.Cryptography has been updated to .NET 10.
 
